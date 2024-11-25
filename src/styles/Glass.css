@@ -1,0 +1,107 @@
+.App {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.glass-top {
+    position: relative;
+    height: 70px;
+    width: 200px;
+    background-color: rgb(58, 57, 57);
+    margin: auto;
+    border-radius: 50%;
+    filter: blur(1px);
+    /* overflow:  hidden; */
+    z-index: 5;
+}
+
+.shadow-on-top {
+    position: relative;
+    background: white;
+    position: absolute;
+    top: -1px;
+    left: 6px;
+    height: 71px;
+    width: 187px;
+    margin: auto;
+    border-radius: 50%;
+    filter: blur(1px);
+}
+
+.shadow-on-top::after {
+    display:block;
+    content:"";
+    height:10px;
+    width: 130px;
+    background: rgb(188, 218, 231);
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 15px 20px rgb(233, 227, 227); */
+    filter: blur(30px);
+} 
+
+
+.bottom {
+    position: relative;
+    border: 10px solid rgba(41, 69, 104, 0.274);
+    /* filter: blur(30px); */
+    height: 50px;
+    width: 163px;
+    border-radius: 50%;
+    z-index: 6;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+.bottom::after {
+    position: absolute;
+    content:"";
+    display: block;
+    height: 50px;
+    width: 100px;
+    background: white;
+    border-radius: 50px;
+    left: 30px;
+    bottom: 20px;
+    filter: blur(10px);
+    box-shadow: 0px 0px 30px 30px white;
+}
+
+
+.left-edge {
+    height: 380px;
+    width: 100px;
+    background :linear-gradient(98deg, rgba(17, 16, 16, 0.705) 0%, rgba(41, 73, 78, 0.329) 11%, rgba(42, 86, 104, 0.103) 45%);
+    position: absolute;
+    transform: rotate(-3deg);
+    bottom: -77px;
+    left: 644px;
+    border-bottom-left-radius: 8px;
+}
+
+.right-edge {
+    height: 380px;
+    width: 100px;
+    background :linear-gradient(-98deg, rgba(17, 16, 16, 0.582) 0%, rgba(41, 73, 78, 0.288) 11% 30%, rgba(42, 86, 104, 0.103) 45% 50%);
+    position: absolute;
+    transform: rotate(3deg);
+    bottom: -77px;
+    right: 644px;
+    border-bottom-right-radius: 8px;
+}
+
+.light {
+    position: absolute;
+    height: 380px;
+    width: 60px;
+    background : rgb(255, 255, 255);
+    bottom: -85px;
+    filter: blur(10px);
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px white;
+}
