@@ -1,8 +1,12 @@
 .App {
+    position: relative;
     background: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    width: 200px;
+    height: 440px;
     margin: 100px;
 }
 
@@ -11,7 +15,6 @@
     height: 70px;
     width: 200px;
     background-color: rgb(58, 57, 57);
-    margin: auto;
     border-radius: 50%;
     filter: blur(1px);
     /* overflow:  hidden; */
@@ -74,25 +77,26 @@
 
 
 .left-edge {
-    height: 380px;
+    height: 386px;
     width: 100px;
     background :linear-gradient(98deg, rgba(17, 16, 16, 0.705) 0%, rgba(41, 73, 78, 0.329) 11%, rgba(42, 86, 104, 0.103) 45%);
     position: absolute;
-    transform: rotate(-3deg);
-    bottom: -77px;
-    left: 644px;
-    border-bottom-left-radius: 8px;
+    transform: rotate(-2.6deg);
+    bottom: 23px;
+    left: 9px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 00px;
 }
 
 .right-edge {
-    height: 380px;
+    height: 386px;
     width: 100px;
     background :linear-gradient(-98deg, rgba(17, 16, 16, 0.582) 0%, rgba(41, 73, 78, 0.288) 11% 30%, rgba(42, 86, 104, 0.103) 45% 50%);
     position: absolute;
-    transform: rotate(3deg);
-    bottom: -77px;
-    right: 644px;
-    border-bottom-right-radius: 8px;
+    transform: rotate(2.6deg);
+    bottom: 23px;
+    right: 9px;
+    border-bottom-right-radius: 13px;
 }
 
 .light {
@@ -100,7 +104,7 @@
     height: 380px;
     width: 60px;
     background : rgb(255, 255, 255);
-    bottom: -85px;
+    bottom: 10px;
     filter: blur(10px);
     border-radius: 50%;
     box-shadow: 5px 5px 20px white;

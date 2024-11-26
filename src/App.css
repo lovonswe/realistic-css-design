@@ -1,17 +1,2 @@
-.App {
-  text-align: center;
-  background-color: #151515;
-  min-height: 100vh;
-}
-
-.gradient {
-  height: 100px;
-  width: 70px;
-  background: #3db419;
-  background: linear-gradient(
-    to right,
-    #316eac,#a33f3f
-  );
-}
 
 
